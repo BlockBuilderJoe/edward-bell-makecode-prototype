@@ -4,11 +4,11 @@ This repository hosts the MakeCode tutorial used by the CADW MakerCode world for
 
 Open it in Minecraft MakeCode:
 
-https://minecraft.makecode.com/?ingame=1&ipc=1&noRunOnX=1&lockedEditor=1#tutorial:https://github.com/BlockBuilderJoe/edward-bell-makecode-prototype/edward-bell-play
+https://minecraft.makecode.com/?ingame=1&ipc=1&noRunOnX=1&lockedEditor=1#tutorial:https://github.com/BlockBuilderJoe/edward-bell-makecode-prototype/edward-bell-play-v2
 
 Practice tutorial:
 
-https://minecraft.makecode.com/?ingame=1&ipc=1&noRunOnX=1&lockedEditor=1#tutorial:https://github.com/BlockBuilderJoe/edward-bell-makecode-prototype/practice-bell-play
+https://minecraft.makecode.com/?ingame=1&ipc=1&noRunOnX=1&lockedEditor=1#tutorial:https://github.com/BlockBuilderJoe/edward-bell-makecode-prototype/practice-bell-play-v2
 
 Both tutorials run once from top to bottom when the learner presses the green
 Play button. No Minecraft chat command is required. The practice checks whether

@@ -17,11 +17,6 @@ agent.move(BACK, 1)
 loops.pause(1000)
 agent.move(FORWARD, 1)
 loops.pause(1000)
-if (agent.inspect(AgentInspection.Block, DOWN) == GOLD_BLOCK) {
-    player.say("Agent is home. Read the Mentor's SOS result.")
-} else {
-    player.say("Not finished. Return the Agent to gold, fix the blocks, then press Play again.")
-}
 ```
 
 ## Mission Brief @showdialog
@@ -30,7 +25,7 @@ Edward's workshop bell system must send SOS: Bell 1 three times, Bell 2 three ti
 
 ## Step 1
 
-The starter almost sends the first S. Add one ``||agent:agent move back||`` and one ``||loops:pause||`` after the third Bell 1 ring, before the feedback check.
+The starter almost sends the first S. Add one ``||agent:agent move back||`` and one ``||loops:pause||`` after the third Bell 1 ring.
 
 #### ~ tutorialhint
 
@@ -73,7 +68,7 @@ loops.pause(1000)
 
 ## Step 4
 
-Turn around twice, then repeat Bell 1 three times for the final S. Keep the feedback check at the very end. Press Play once when the entire sequence is ready.
+Turn around twice, then repeat Bell 1 three times for the final S. Press Play once when the entire sequence is ready.
 
 #### ~ tutorialhint
 
@@ -117,9 +112,4 @@ agent.move(FORWARD, 1)
 agent.move(BACK, 1)
 agent.turn(LEFT_TURN)
 loops.pause(1000)
-if (agent.inspect(AgentInspection.Block, DOWN) == GOLD_BLOCK) {
-    player.say("Agent is home")
-} else {
-    player.say("Try again")
-}
 ```
