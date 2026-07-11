@@ -14,3 +14,10 @@ Both tutorials run once from top to bottom when the learner presses the green
 Play button. No Minecraft chat command is required. The practice checks whether
 the Agent returned to the gold tile and gives an immediate success or retry
 message; the world supplies wrong-bell and wrong-order feedback for the full SOS.
+
+## Cymraeg
+
+Welsh tutorial copies live in `_locales/cy/`. MakeCode selects them when its
+language is Welsh; this link requests the Welsh SOS tutorial explicitly:
+
+https://minecraft.makecode.com/?lang=cy&ingame=1&ipc=1&noRunOnX=1&lockedEditor=1#tutorial:https://github.com/BlockBuilderJoe/edward-bell-makecode-prototype/edward-bell-play-v2
