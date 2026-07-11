@@ -7,6 +7,7 @@
 # System Cyfathrebu Clychau Edward
 
 ```template
+agent.teleport(world(18, 57, 12), EAST)
 agent.move(FORWARD, 1)
 loops.pause(1000)
 agent.move(BACK, 1)
@@ -21,7 +22,7 @@ loops.pause(1000)
 
 ## Briff y Genhadaeth @showdialog
 
-Rhaid i system glychau gweithdy Edward anfon SOS: Cloch 1 deirgwaith, Cloch 2 deirgwaith, yna Cloch 1 deirgwaith. Nid oes angen gorchymyn sgwrsio. Adeiladwch tra bo'r cod wedi'i stopio, yna pwyswch y botwm Chwarae gwyrdd unwaith i redeg y signal cyfan.
+Rhaid i system glychau gweithdy Edward anfon SOS: Cloch 1 deirgwaith, Cloch 2 deirgwaith, yna Cloch 1 deirgwaith. Yn gyntaf, pwyntiwch at y deilsen aur, Cloch 1 a Chloch 2, yna dywedwch y llwybr yn uchel: **S, O, S**. Mae eich Asiant yn dechrau ar y deilsen aur yn wynebu Cloch 1, ac nid oes angen gorchymyn sgwrsio. Adeiladwch tra bo'r cod wedi'i stopio, yna pwyswch y botwm Chwarae gwyrdd unwaith i redeg y signal cyfan.
 
 ## Cam 1
 

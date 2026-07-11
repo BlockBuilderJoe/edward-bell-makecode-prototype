@@ -7,17 +7,18 @@
 # Practice Bell 1
 
 ```template
+agent.teleport(world(18, 57, 12), EAST)
 agent.move(FORWARD, 1)
 loops.pause(1000)
 ```
 
 ## Mission Brief @showdialog
 
-Move the Agent forward to Bell 1, wait, then move it back to the gold tile. You do not need to type a command. Build while the code is stopped, then press the green Play button once to try it.
+Your Agent will start on the gold tile, facing Bell 1. Before you build, point to the gold tile and Bell 1 and predict where **forward 1** and **back 1** will take it. You do not need to type a command. Build while the code is stopped, then press the green Play button once to try it.
 
 ## Step 1
 
-The starter already moves forward and waits. Add one ``||agent:agent move back||`` block after the pause.
+The starter already places the Agent, moves it forward and waits. Add one ``||agent:agent move back||`` block after the pause so it returns safely to gold.
 
 #### ~ tutorialhint
 

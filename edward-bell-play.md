@@ -7,6 +7,7 @@
 # Edward's Bell Communication System
 
 ```template
+agent.teleport(world(18, 57, 12), EAST)
 agent.move(FORWARD, 1)
 loops.pause(1000)
 agent.move(BACK, 1)
@@ -21,7 +22,7 @@ loops.pause(1000)
 
 ## Mission Brief @showdialog
 
-Edward's workshop bell system must send SOS: Bell 1 three times, Bell 2 three times, then Bell 1 three times. You do not need a chat command. Build while the code is stopped, then press the green Play button once to run the whole signal.
+Edward's workshop bell system must send SOS: Bell 1 three times, Bell 2 three times, then Bell 1 three times. First point to gold, Bell 1 and Bell 2, then say the route aloud: **S, O, S**. Your Agent starts on gold facing Bell 1, and you do not need a chat command. Build while the code is stopped, then press the green Play button once to run the whole signal.
 
 ## Step 1
 
