@@ -24,13 +24,21 @@ loops.pause(1000)
 
 Edward's workshop bell system must send SOS: Bell 1 three times, Bell 2 three times, then Bell 1 three times. First point to gold, Bell 1 and Bell 2, then say the route aloud: **S, O, S**. Your Agent starts on gold facing Bell 1, and you do not need a chat command. Build while the code is stopped, then press the green Play button once to run the whole signal.
 
-## Step 1
+## Step 1 — Predict
 
-The starter almost sends the first S. Add one ``||agent:agent move back||`` and one ``||loops:pause||`` after the third Bell 1 ring.
+Do not change the starter yet. Trace it from top to bottom. Predict where the Agent will stop and why every move has a 1000 ms pause. Write the steps as pseudocode, draw them, or act them out.
 
 #### ~ tutorialhint
 
-Every ring uses the same pattern: forward, pause, back, pause.
+The Agent will ring Bell 1 three times, but it will stop on Bell 1 after the third ring. The pauses let you hear each ring and give the pressure plate time to reset.
+
+## Step 2 — Run and observe
+
+Press Play once without fixing the code. Check your prediction: did the Agent return to gold? Did the full SOS continue? Stop the code after observing the fault.
+
+## Step 3 — Debug the first S
+
+Add one ``||agent:agent move back||`` and one ``||loops:pause||`` after the third Bell 1 ring. This completes the reliable pattern: forward, pause, back, pause.
 
 ```blocks
 agent.move(FORWARD, 1)
@@ -39,7 +47,7 @@ agent.move(BACK, 1)
 loops.pause(1000)
 ```
 
-## Step 2
+## Step 4 — Turn to O
 
 Turn the Agent around to face Bell 2. Each turn is 90 degrees, so add two ``||agent:agent turn left||`` blocks.
 
@@ -48,7 +56,7 @@ agent.turn(LEFT_TURN)
 agent.turn(LEFT_TURN)
 ```
 
-## Step 3
+## Step 5 — Build O
 
 Send O by repeating the forward, pause, back, pause pattern three times at Bell 2.
 
@@ -67,7 +75,7 @@ agent.move(BACK, 1)
 loops.pause(1000)
 ```
 
-## Step 4
+## Step 6 — Return to S and test
 
 Turn around twice, then repeat Bell 1 three times for the final S. Press Play once when the entire sequence is ready.
 
