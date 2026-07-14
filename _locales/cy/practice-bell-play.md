@@ -4,7 +4,7 @@
 ### @unifiedToolbox true
 ### @explicitHints 1
 
-# Ymarfer Cloch 1
+# [WELSH PLACEHOLDER] Lorem Ipsum
 
 ```template
 agent.teleport(world(18, 57, 12), EAST)
@@ -12,17 +12,17 @@ agent.move(FORWARD, 1)
 loops.pause(1000)
 ```
 
-## Briff y Genhadaeth @showdialog
+## Lorem ipsum dolor @showdialog
 
-Bydd eich Asiant yn dechrau ar y deilsen aur, yn wynebu Cloch 1. Cyn adeiladu, pwyntiwch at y deilsen aur a Chloch 1 a rhagfynegwch ble bydd **ymlaen 1** ac **yn ôl 1** yn mynd ag ef. Nid oes angen teipio gorchymyn. Adeiladwch tra bo'r cod wedi'i stopio, yna pwyswch y botwm Chwarae gwyrdd unwaith i roi cynnig arno.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. **WELSH PLACEHOLDER: test content only.**
 
-## Cam 1
+## Lorem ipsum 1
 
-Mae'r cod cychwynnol eisoes yn gosod yr Asiant, yn ei symud ymlaen ac yn aros. Ychwanegwch un bloc ``||agent:Asiant symud yn ôl||`` ar ôl y saib er mwyn iddo ddychwelyd yn ddiogel i'r deilsen aur.
+Lorem ipsum dolor sit amet. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 #### ~ tutorialhint
 
-Gosodwch y cyfeiriad i **yn ôl** a'r pellter i **1**.
+Lorem ipsum dolor sit amet. **WELSH PLACEHOLDER.**
 
 ```blocks
 agent.move(FORWARD, 1)
@@ -30,9 +30,9 @@ loops.pause(1000)
 agent.move(BACK, 1)
 ```
 
-## Cam 2
+## Lorem ipsum 2
 
-Pwyswch y botwm Chwarae gwyrdd unwaith. Mae'r byd yn gwirio'r Asiant ar y platfform a bydd y Mentor yn eich arwain at y cam nesaf. Os oes angen cynnig arall arnoch, stopiwch y cod, defnyddiwch fotwm Ailgynnig y Mentor, gwnewch eich newid, a phwyswch Chwarae eto.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
 
 ```ghost
 agent.move(FORWARD, 1)

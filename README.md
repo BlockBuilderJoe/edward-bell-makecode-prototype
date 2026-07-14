@@ -20,31 +20,40 @@ Example world (method demonstration only, not a tested end product):
 https://github.com/BlockBuilderJoe/edward-bell-makecode-prototype/releases/download/v0.0.8/Quest-2C-Edwards-Bell-MakeCode-Prototype.mcworld
 
 Version `v0.0.8` is deliberately a localisation test build. Select Welsh in
-Minecraft Education and look for `[PRAWF CYMRAEG]`, `[CY]` and `Lorem ipsum`
+Minecraft Education and look for `[WELSH PLACEHOLDER]`, `[CY]` and `Lorem ipsum`
 in the opening HUD message, Mentor name, first NPC page and its first buttons.
-These markers are placeholders, not approved Welsh copy.
+All Welsh-locale learner copy is deliberately Lorem Ipsum placeholder text,
+not AI-generated Welsh and not approved Welsh copy.
 
 **Verified 14 July 2026:** selecting Welsh in Minecraft Education successfully
 loads the world's `cy_CY.lang` strings. This confirms the localisation method;
 the placeholder markers still need replacing with reviewed Welsh copy before
 the prototype can be treated as learner-ready.
 
-## Localising the tutorial into Welsh
+**Unreleased MakeCode test fix:** the `welsh-locale-test` branch registers the
+Welsh tutorial Markdown files in `pxt.json` and uses `liveforcelang=cy` to load
+approved Welsh MakeCode interface strings from Crowdin. This should make
+MakeCode resolve the tutorial from `_locales/cy/`; it still requires an
+in-client test before release.
 
-Welsh tutorial copies live in `_locales/cy/`. MakeCode selects them when its
-language is Welsh; this link requests the Welsh SOS tutorial explicitly:
+## Preparing the tutorial for human Welsh localisation
 
-https://minecraft.makecode.com/?lang=cy&ingame=1&ipc=1&noRunOnX=1&lockedEditor=1#tutorial:https://github.com/BlockBuilderJoe/edward-bell-makecode-prototype/edward-bell-play-v2
+Welsh-locale placeholder copies live in `_locales/cy/`. They intentionally use
+Lorem Ipsum until approved Welsh is supplied by a human translator. MakeCode
+selects them when its language is Welsh; this link requests that locale:
+
+https://minecraft.makecode.com/?liveforcelang=cy&ingame=1&ipc=1&noRunOnX=1&lockedEditor=1#tutorial:github:BlockBuilderJoe/edward-bell-makecode-prototype/edward-bell-play-v2#welsh-locale-test
 
 1. Finish or update the English tutorial in the repository root first.
 2. Create the matching Welsh file at `_locales/cy/<same-filename>.md`.
-3. Translate learner-facing headings, instructions and hints. Keep MakeCode
-   directives, fenced code, block identifiers and TypeScript unchanged so both
-   languages run the same program.
+3. Have a human Welsh-language contributor translate the learner-facing
+   headings, instructions and hints. Do not use AI-generated Welsh. Keep
+   MakeCode directives, fenced code, block identifiers and TypeScript unchanged
+   so both languages run the same program.
 4. Keep the English and Welsh files in the same step order, and add any new
    tutorial filename to `pxt.json`.
-5. Test both the normal link and the `?lang=cy` link above. Check that every
-   step, hint and code block appears and that Play runs the same sequence.
+5. Test both the normal link and the `?liveforcelang=cy` link above. Check that
+   every step, hint and code block appears and that Play runs the same sequence.
 6. Increment the version in `pxt.json`, commit the English and Welsh changes
    together, then publish a new tag/release so MakeCode refreshes its cache.
 

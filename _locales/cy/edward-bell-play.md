@@ -4,7 +4,7 @@
 ### @unifiedToolbox true
 ### @explicitHints 1
 
-# System Cyfathrebu Clychau Edward
+# [WELSH PLACEHOLDER] Lorem Ipsum
 
 ```template
 agent.teleport(world(18, 57, 12), EAST)
@@ -20,68 +20,68 @@ agent.move(FORWARD, 1)
 loops.pause(1000)
 ```
 
-## Briff y Genhadaeth @showdialog
+## Lorem ipsum dolor @showdialog
 
-Rhaid i system glychau gweithdy Edward anfon SOS: Cloch 1 deirgwaith, Cloch 2 deirgwaith, yna Cloch 1 deirgwaith. Yn gyntaf, pwyntiwch at y deilsen aur, Cloch 1 a Chloch 2, yna dywedwch y llwybr yn uchel: **S, O, S**. Mae eich Asiant yn dechrau ar y deilsen aur yn wynebu Cloch 1, ac nid oes angen gorchymyn sgwrsio. Adeiladwch tra bo'r cod wedi'i stopio, yna pwyswch y botwm Chwarae gwyrdd unwaith i redeg y signal cyfan.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. **WELSH PLACEHOLDER: test content only.**
 
-## Cam 1 — Rhagfynegi
+## Lorem ipsum 1
 
-Peidiwch â newid y cod cychwynnol eto. Dilynwch ef o'r brig i'r gwaelod. Rhagfynegwch ble bydd yr Asiant yn stopio a pham mae saib 1000 ms gyda phob symudiad. Ysgrifennwch y camau fel ffug-god, tynnwch lun ohonynt, neu actiwch nhw.
-
-#### ~ tutorialhint
-
-Bydd yr Asiant yn canu Cloch 1 deirgwaith, ond bydd yn stopio ar Gloch 1 ar ôl y trydydd caniad. Mae'r seibiau'n gadael ichi glywed pob caniad ac yn rhoi amser i'r plât pwysau ailosod.
-
-## Cam 2 — Rhedeg ac arsylwi
-
-Pwyswch Chwarae unwaith heb drwsio'r cod. Gwiriwch eich rhagfynegiad: a ddychwelodd yr Asiant i'r deilsen aur? A barhaodd yr SOS cyfan? Stopiwch y cod ar ôl arsylwi'r nam.
-
-## Cam 3 — Dadfygio'r S cyntaf
-
-Ychwanegwch un ``||agent:Asiant symud yn ôl||`` ac un ``||loops:saib||`` ar ôl trydydd caniad Cloch 1. Mae hyn yn cwblhau'r patrwm dibynadwy: ymlaen, saib, yn ôl, saib.
-
-```blocks
-agent.move(FORWARD, 1)
-loops.pause(1000)
-agent.move(BACK, 1)
-loops.pause(1000)
-```
-
-## Cam 4 — Troi at O
-
-Trowch yr Asiant o gwmpas i wynebu Cloch 2. Mae pob tro yn 90 gradd, felly ychwanegwch ddau floc ``||agent:Asiant troi i'r chwith||``.
-
-```blocks
-agent.turn(LEFT_TURN)
-agent.turn(LEFT_TURN)
-```
-
-## Cam 5 — Adeiladu O
-
-Anfonwch O drwy ailadrodd y patrwm ymlaen, saib, yn ôl, saib deirgwaith wrth Gloch 2.
-
-```blocks
-agent.move(FORWARD, 1)
-loops.pause(1000)
-agent.move(BACK, 1)
-loops.pause(1000)
-agent.move(FORWARD, 1)
-loops.pause(1000)
-agent.move(BACK, 1)
-loops.pause(1000)
-agent.move(FORWARD, 1)
-loops.pause(1000)
-agent.move(BACK, 1)
-loops.pause(1000)
-```
-
-## Cam 6 — Dychwelyd at S a phrofi
-
-Trowch o gwmpas ddwywaith, yna ailadroddwch Gloch 1 deirgwaith ar gyfer yr S olaf. Pwyswch Chwarae unwaith pan fydd y dilyniant cyfan yn barod.
+Lorem ipsum dolor sit amet. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 #### ~ tutorialhint
 
-Mae'r byd yn rhoi adborth ar unwaith os bydd y gloch anghywir yn canu. Os yw'n dweud bod y drefn yn anghywir, stopiwch y cod, dewiswch Ailgynnig gan y Mentor, trwsiwch yr adran honno, a phwyswch Chwarae eto.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. **WELSH PLACEHOLDER.**
+
+## Lorem ipsum 2
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+## Lorem ipsum 3
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+```blocks
+agent.move(FORWARD, 1)
+loops.pause(1000)
+agent.move(BACK, 1)
+loops.pause(1000)
+```
+
+## Lorem ipsum 4
+
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+```blocks
+agent.turn(LEFT_TURN)
+agent.turn(LEFT_TURN)
+```
+
+## Lorem ipsum 5
+
+Lorem ipsum dolor sit amet. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+
+```blocks
+agent.move(FORWARD, 1)
+loops.pause(1000)
+agent.move(BACK, 1)
+loops.pause(1000)
+agent.move(FORWARD, 1)
+loops.pause(1000)
+agent.move(BACK, 1)
+loops.pause(1000)
+agent.move(FORWARD, 1)
+loops.pause(1000)
+agent.move(BACK, 1)
+loops.pause(1000)
+```
+
+## Lorem ipsum 6
+
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos.
+
+#### ~ tutorialhint
+
+Lorem ipsum dolor sit amet. **WELSH PLACEHOLDER: test content only.**
 
 ```blocks
 agent.turn(LEFT_TURN)
@@ -92,9 +92,9 @@ agent.move(BACK, 1)
 loops.pause(1000)
 ```
 
-## Estyniad
+## Lorem ipsum 7
 
-Byrhewch y rhaglen gyda dolen ailadrodd a swyddogaeth. Mae'r tair galwad swyddogaeth yn rhedeg unwaith, o'r brig i'r gwaelod, pan fydd Chwarae yn cael ei bwyso.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
 
 ```blocks
 function formLetter () {
