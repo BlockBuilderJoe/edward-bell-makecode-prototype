@@ -17,7 +17,12 @@ message; the world supplies wrong-bell and wrong-order feedback for the full SOS
 
 Example world (method demonstration only, not a tested end product):
 
-https://github.com/BlockBuilderJoe/edward-bell-makecode-prototype/releases/download/v0.0.7/Quest-2C-Edwards-Bell-MakeCode-Prototype.mcworld
+https://github.com/BlockBuilderJoe/edward-bell-makecode-prototype/releases/download/v0.0.8/Quest-2C-Edwards-Bell-MakeCode-Prototype.mcworld
+
+Version `v0.0.8` is deliberately a localisation test build. Select Welsh in
+Minecraft Education and look for `[PRAWF CYMRAEG]`, `[CY]` and `Lorem ipsum`
+in the opening HUD message, Mentor name, first NPC page and its first buttons.
+These markers are placeholders, not approved Welsh copy.
 
 ## Localising the tutorial into Welsh
 
