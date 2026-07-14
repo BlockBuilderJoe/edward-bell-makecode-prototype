@@ -1,6 +1,6 @@
 {
   "name": "edward-bell-makecode-prototype",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Minecraft MakeCode tutorial for Edward's Bell Communication System.",
   "dependencies": {
     "core": "*",
