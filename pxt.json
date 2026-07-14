@@ -1,6 +1,6 @@
 {
   "name": "edward-bell-makecode-prototype",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Minecraft MakeCode tutorial for Edward's Bell Communication System.",
   "dependencies": {
     "core": "*",
@@ -16,10 +16,12 @@
     "edward-bell.md",
     "edward-bell-play.md",
     "edward-bell-play-v2.md",
+    "python-bell-test.md",
     "_locales/cy/practice-bell-play.md",
     "_locales/cy/practice-bell-play-v2.md",
     "_locales/cy/edward-bell-play.md",
-    "_locales/cy/edward-bell-play-v2.md"
+    "_locales/cy/edward-bell-play-v2.md",
+    "_locales/cy/python-bell-test.md"
   ],
   "targetVersions": {
     "target": "1.6.27",

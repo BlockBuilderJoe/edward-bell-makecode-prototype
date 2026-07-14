@@ -23,6 +23,22 @@ Welsh-locale practice tutorial:
 
 https://minecraft.makecode.com/?liveforcelang=cy&skipgithubcache=1&ingame=1&ipc=1&noRunOnX=1&lockedEditor=1#tutorial:github:BlockBuilderJoe/edward-bell-makecode-prototype/practice-bell-play-v2
 
+## Python editor example
+
+The production repository now also contains a small Python version of the Bell
+practice. It is a separate example for testing text-code routing; the released
+world still defaults to the guided Blocks flow.
+
+Open the Python example in Code Builder:
+
+https://minecraft.makecode.com/?forcelang=en&skipgithubcache=1&ingame=1&ipc=1&noRunOnX=1&lockedEditor=1#tutorial:py:github:BlockBuilderJoe/edward-bell-makecode-prototype/python-bell-test
+
+The route uses `#tutorial:py:` to select Python, `python-template` for starter
+code, and `python` snippets for the missing line and completed example. The
+matching Welsh placeholder is registered at `_locales/cy/python-bell-test.md`.
+For the NPC handoff pattern and the equivalent JavaScript route, see
+[CODEBUILDER-LANGUAGES.md](https://github.com/BlockBuilderJoe/edward-bell-makecode-python-test/blob/master/CODEBUILDER-LANGUAGES.md).
+
 Both tutorials run from top to bottom when the learner presses the green Play
 button. No Minecraft chat command is required. The practice checks whether the
 Agent returned to the gold tile and gives an immediate success or retry message;
