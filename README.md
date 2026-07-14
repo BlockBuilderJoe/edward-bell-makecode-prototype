@@ -39,6 +39,12 @@ matching Welsh placeholder is registered at `_locales/cy/python-bell-test.md`.
 For the NPC handoff pattern and the equivalent JavaScript route, see
 [CODEBUILDER-LANGUAGES.md](https://github.com/BlockBuilderJoe/edward-bell-makecode-python-test/blob/master/CODEBUILDER-LANGUAGES.md).
 
+## Markdown authoring guide
+
+For the full tutorial structure, code fences, language routes, hints,
+localisation, NPC handoff, reset paths, and testing checklist, see
+[MARKDOWN-GUIDE.md](MARKDOWN-GUIDE.md).
+
 Both tutorials run from top to bottom when the learner presses the green Play
 button. No Minecraft chat command is required. The practice checks whether the
 Agent returned to the gold tile and gives an immediate success or retry message;
