@@ -24,6 +24,11 @@ Minecraft Education and look for `[PRAWF CYMRAEG]`, `[CY]` and `Lorem ipsum`
 in the opening HUD message, Mentor name, first NPC page and its first buttons.
 These markers are placeholders, not approved Welsh copy.
 
+**Verified 14 July 2026:** selecting Welsh in Minecraft Education successfully
+loads the world's `cy_CY.lang` strings. This confirms the localisation method;
+the placeholder markers still need replacing with reviewed Welsh copy before
+the prototype can be treated as learner-ready.
+
 ## Localising the tutorial into Welsh
 
 Welsh tutorial copies live in `_locales/cy/`. MakeCode selects them when its
