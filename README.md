@@ -39,6 +39,16 @@ matching Welsh placeholder is registered at `_locales/cy/python-bell-test.md`.
 For the NPC handoff pattern and the equivalent JavaScript route, see
 [CODEBUILDER-LANGUAGES.md](https://github.com/BlockBuilderJoe/edward-bell-makecode-python-test/blob/master/CODEBUILDER-LANGUAGES.md).
 
+## Long text window test
+
+The deliberately oversized Lorem Ipsum example is available here:
+
+https://minecraft.makecode.com/?skipgithubcache=1&ingame=1&ipc=1&noRunOnX=1&lockedEditor=1#tutorial:github:BlockBuilderJoe/edward-bell-makecode-prototype/long-text-example
+
+It is a layout test, not learner content. The companion world adds a **Text
+Length Test** button to the Mentor so the tutorial can be opened directly from
+Minecraft Education.
+
 ## Markdown authoring guide
 
 For the full tutorial structure, code fences, language routes, hints,
