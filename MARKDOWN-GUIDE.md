@@ -52,24 +52,26 @@ Place control metadata before the title. These options make the activity feel
 like a guided lesson rather than a blank project:
 
 ```markdown
-### @hideIteration true
 ### @hideDone true
-### @flyoutOnly 1
-### @unifiedToolbox true
-### @explicitHints 1
+### @explicitHints true
 
 # Mechanical Gardener
 ```
 
 Use only the options the activity needs:
 
-- `@hideIteration true` hides the tutorial step counter when the activity is
-  not intended to be replayed step by step.
+- Leave `@hideIteration` unset for a multi-page lesson: it hides Back, Next and
+  the step counter. In Minecraft Education 1.26.32, a briefing followed by
+  Predict became a dead end with this option enabled.
 - `@hideDone true` removes the normal tutorial completion button when the game
   world is responsible for confirming success.
-- `@flyoutOnly 1` limits the toolbox to blocks used by the current step.
-- `@unifiedToolbox true` keeps the toolbox layout consistent between steps.
-- `@explicitHints 1` enables the expandable hint blocks described below.
+- Leave `@flyoutOnly` and `@unifiedToolbox` unset when the lesson requires
+  categorized toolbox navigation, such as Agent and Advanced → Text. Test any
+  alternate toolbox layout against the blocks the learner actually needs.
+- `@explicitHints true` makes the parser use the authored `~ tutorialhint`
+  delimiter. Verify hints are hidden, can be opened and can be dismissed.
+  Without this metadata, prose-only hints can leak into captions with the raw
+  delimiter. A hidden `ghost` fence does not establish a hint boundary.
 
 Do not put executable code, a blank line, or a heading above the metadata.
 
@@ -160,7 +162,7 @@ interchangeable: test each route in its intended editor.
 
 ## 6. Add hints, missing code, and validation
 
-With `@explicitHints 1`, add an expandable hint after the relevant step:
+With `@explicitHints true`, add an expandable hint after the relevant step:
 
 ```markdown
 #### ~ tutorialhint
@@ -254,11 +256,32 @@ accept the intended learner change, and return useful feedback from the world.
 - **The NPC opens the wrong activity:** check the final filename in the route
   and the function called by the NPC.
 - **Python opens as Blocks:** use `#tutorial:py:` and `python-template`.
-- **The latest Markdown is missing:** use `skipgithubcache=1` while testing and
-  confirm the file is on the repository's default branch.
+- **The latest Markdown is missing:** bump `pxt.json` version, use
+  `skipgithubcache=1`, and verify the exact default-branch source. These do not
+  prove what the client loaded: Raglan retained an older copy during a retest.
+  A fresh temporary public QA repository and disposable world handoff resolved
+  that ambiguity. Record the QA URL and immutable source hashes.
+- **Next/Back is missing:** remove `@hideIteration` from multi-page lessons and
+  exercise every page in both directions, including a return to `@showdialog`.
+- **Raw tutorialhint text or answers appear before Hint:** enable
+  `@explicitHints true` and test both prose-only and rendered block hints.
 - **The tutorial is blank:** check that its file is listed in `pxt.json` and
   that the first metadata lines appear before the title.
 - **Welsh remains English:** check the matching `_locales/cy/` filename, use
   `liveforcelang=cy`, and bypass the GitHub cache.
 - **Learners cannot recover:** add a world reset/retry function and a visible
   NPC route back to the activity.
+
+## Client evidence behind these defaults
+
+Raglan UI regression run `5635afca-71aa-4db6-9378-94acd1b4cb81` on 1 October
+2026 used Minecraft Education 1.26.32 and tutorial revision
+`a90690331584c0be189f152c38685c9fe3994330` (`pxt.json` 0.0.3). Both actual Mentor
+buttons opened the QA lessons. All 9 Bell and 13 Garden pages, all 11 on-request
+hints, and the categorized Agent inspection and Text join blocks were checked.
+Program execution, world success, reset/replay, Welsh and multiplayer were
+separate pending cases; this evidence does not certify those paths.
+
+The parser implementation is [Microsoft PXT tutorial.ts](https://github.com/microsoft/pxt/blob/master/pxtlib/tutorial.ts),
+particularly `parseTutorialHint` after hidden snippets are stripped. Client
+behaviour settles any discrepancy with prose descriptions of the options.
